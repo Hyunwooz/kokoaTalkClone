@@ -1,0 +1,104 @@
+/*
+네비게이션 바 하단에 고정하기
+position: fixed
+bottom: 0
+width:100%
+box-sizing: border-box
+
+width:100%가 부모의 너비를 다 받는다
+
+box-sizing:border-box를 사용해 아이콘들이 한 줄로 보이게 함
+
+css box padding의 디폴트 원리
+200픽셀의 박스에 50픽셀의 패딩을 주면, css는 기존 박스의 가로를 유지하기 위해 50만큼 박스를 늘림.
+이를 막기 위해 box-sizing:border-box를 쓰면 box의 크기를 유지한 채 padding을 줄 수 있다.
+
+box-sizing:border-box
+box 사이즈는 고정시켜라 라는 명렁어
+
+- position: absolute;는 정중앙. absolute는 해당 element의 가장 가까운 relative를 가진 부모 기준으로 움직인다. 
+기본적으로 body가 그에 해당되며, 따로 원하는 기준이 있다면 그 container에 position: relative;를 준다.
+
+*/
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    color: #2e363e;
+    position: relative;
+}
+
+/* @keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    50%{
+        transform: translateY(5px) rotateY(360deg);
+    }
+    100% {
+        transform: none;
+    }
+} */
+
+.nav__notificarion {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    /* animation: notificationAnimation 3s ease-in-out infinite; */
+}
+
+.nav__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: tomato;
+    position: absolute;
+    left: 30px;
+    bottom: 28px;
+}
+
+/* .nav__link__find {
+    color: var(--yellow);
+} */
+
+/* @keyframes appearBtnAny {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.nav__btn {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: appearBtnAny 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.nav__btn:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.nav__btn:nth-child(4) {
+    animation-delay: 0.8s;
+} */

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chatting - Woo Hyun Dev</title>
+    </head>
+    <body id="chatting-screen">
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>서비스 없음</span>
+                <!--To DO : wifi Icon-->
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>80%</span>
+                <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <!--배터리 Icon-->
+                <!--라이트닝 Icon-->
+            </div>
+        </div>
+        <header class="alt-header">
+            <div class="alt-header__column">
+                <i class="fas fa-angle-left fa-3x" onclick="history.back()"></i>
+            </div>
+            <div class="alt-header__column">
+                <h1 class="alt-header__title">WooHyunDev</h1>
+            </div>
+            <div class="alt-header__column chatting-header">
+                <span><i class="fas fa-search fa-2x"></i></span>
+                <span><i class="fas fa-bars fa-2x"></i></span>
+            </div>
+        </header>
+
+        <main class="main-screen main-chatting">
+            <div class="chatting_timestamp">Tuesday,June 30, 2020</div>
+            <div class="message-row">
+                <img src="./img/user.png" />
+                <div class="message-row__content">
+                    <span class="message__author">User</span>
+                    <div class="message__info">
+                        <span class="message__bubble">Hi</span>
+                        <span class="message__time">22:27</span>
+                    </div>
+                </div>
+            </div>
+            <div class="message-row message-row--own">
+                <div class="message-row__content">
+                    <div class="message__info">
+                        <span class="message__bubble">Hi nice meet you</span>
+                        <span class="message__time">22:27</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <form class="reply">
+            <div class="reply__column">
+                <i class="far fa-plus-square fa-2x"></i>
+            </div>
+            <div class="reply__column">
+                <input type="text" placeholder="메세지를 입력하세요." />
+                <i class="far fa-smile-wink fa-lg"></i>
+                <button><i class="fas fa-arrow-up fa-lg"></i></button>
+            </div>
+        </form>
+
+        <div id="no-mobile">
+            <span>스크린이 너무 큽니다. ㅠㅠ</span>
+        </div>
+
+        <!-- html 자동생성 문장  nav>ul>li*4>a -->
+
+        <script
+            src="https://kit.fontawesome.com/11b28788e0.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

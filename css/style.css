@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-components.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chatting.css";
+
+/*
+Css에서 Class는 .Classname 
+        id는 #ID name
+
+해당 BOX ELEMENT 내에 속성(Attribute 선택 시 ::Attribute
+
+EX) 
+
+#login-form input::placeholder
+
+Ex) input이 submit타입이 아닐경우에만
+
+#login-form input:not([type="submit"])
+
+
+color: inherit; << 부모로부터 색상을 받음
+*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #2e363e;
+}
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}

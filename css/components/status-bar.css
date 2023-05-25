@@ -1,0 +1,43 @@
+/*
+
+status-bar와 header-screen이 겹치는 현상이 있으신 분들,
+position: sticky; 로 해결해보십시오. (status-bar에 설정)
+sticky 속성은 상, 하, 좌, 우 주어진 값이 임계치에 도달할 경우 그 자리에 고정되는 속성이라고 합니다.
+
+*/
+
+.status-bar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+}
+
+.status-bar__column {
+    width: 33%;
+}
+
+.status-bar__column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar__column:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar__column .fa-battery-three-quarters {
+    margin: 0px 5px;
+}
+
+.status-bar__column:first-child span {
+    margin-right: 5px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to Woo Hyun Dev</title>
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>서비스 없음</span>
+                <!--To DO : wifi Icon-->
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>80%</span>
+                <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <!--배터리 Icon-->
+                <!--라이트닝 Icon-->
+            </div>
+        </div>
+
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to WooHyunDev</h1>
+            <p class="welcome-header__text">안녕하세요.</p>
+            <p class="welcome-header__text">
+                WooHyunDev 홈페이지에 오신걸 환영합니다.
+            </p>
+            <p class="welcome-header__text">로그인을 부탁드려요.</p>
+        </header>
+
+        <!--
+- form은 중요한 2가지 속성(attribute)을 가지고 있다. 하나는 action이고, 다른 하나는 method이다.
+- action은 어떤 페이지로 data를 보낼건지 지정할 수 있다.
+- action에 적어 놓은 URL에 해당하는 파일이 반드시 존재해야한다.
+- method는 2가지 방식 중 하나를 쓸 수 있다. 하나는 POST이고, 다른 하나는 GET이다.
+- POST는 백엔드 서버에 정보를 전송하는 방식이라 이번 강의에서는 사용할 수 없다.
+- GET 방식은 보안에 취약하다. username이랑 password를 GET 방식으로 보내선 안된다. URL에 포함되어도 상관없는 정보들을 GET 방식으로 보내는 것이다.
+-->
+
+        <form action="friends.html" method="get" id="login-form">
+            <input
+                name="username"
+                type="text"
+                placeholder="이메일 혹은 핸드폰 번호"
+            />
+            <input name="password" type="password" placeholder="비밀번호" />
+            <input type="submit" value="로그인" />
+            <a href="#">WooHyunDev 계정 및 비밀번호 찾기</a>
+        </form>
+
+        <div id="no-mobile">
+            <span>스크린이 너무 큽니다. ㅠㅠ</span>
+        </div>
+
+        <script
+            src="https://kit.fontawesome.com/11b28788e0.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
